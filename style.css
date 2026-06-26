@@ -1,0 +1,398 @@
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ font-family: 'Times New Roman', Times, serif;   
+}
+.body{
+    background-color: #ffff !important;
+    padding: 30px 10px;
+}
+.cv-container{
+    display: flex !important;
+    flex-direction: row;
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    gap: 30px;
+    padding: 20px;
+}
+.kolom-kiri{
+    flex: 1 !important;
+    max-width: 280px;
+    background-color: #f2ede9;
+    padding: 20px;
+    border-radius: 10px;
+}
+.profil-image{
+    width: 150px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 15px;
+    border: 5px solid #ffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 08);
+    display: block;
+    margin: 0 50px auto;
+}
+.informasi-diri{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: left;
+    max-width: 800px;
+}
+.informasi-diri h3{
+    font-size: 14pt;
+    font-weight: 700;
+    color: #4a3b32;
+    text-transform: uppercase;
+    letter-spacing: 0;
+    margin-bottom: 15px;
+    border-bottom: solid;
+    padding-bottom: 5px;
+}
+.daftar-kontak{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+.no-tlpn, .mail{
+    font-size: 0.85rem;
+    line-height: 1.6;
+    color: #4a3b32;
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.625rem;
+}
+.alamat{
+    font-size: 0.85rem;
+    line-height: 1.6;
+    color: #4a3b32;
+    margin-bottom: -2px;
+    display: flex;
+    align-items: flex-start;
+    gap: 0.625rem;  
+}
+.no-tlpn,.strong{
+    font-weight: 600;
+    margin-left: 8px;
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer; 
+}
+.mail, .strong{
+    font-weight: 600;
+    margin-left: 8px;
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+.alamat, .strong{
+    font-weight: 600;
+    margin-left: 8px;
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+.ikon{
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    width: 1.5rem;
+    font-size: 1.1rem;
+    flex-shrink: 0;
+}
+.kotak-tombol{
+    display: flex;
+    flex-direction: column;
+    gap: 0.625rem;
+    margin-top: -10px;
+    margin-left: 30px;
+    align-items: flex-start;
+    width: 100%;
+}
+.btn-wa, .btn-email{
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: left;
+    padding: 0.5rem 0.5rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+    font-family: sans-serif;
+    border: 1px solid #4a3b32;
+    border-radius: 0.75rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+    width: auto;
+    min-width: 10rem;
+}
+.btn-wa{
+    background-color: #b85d43;
+    color: white;
+}
+.btn-wa:hover{
+    background-color: #4a3b32;
+}
+.btn-email{
+    background-color: #1e4620;
+    color: white;
+}
+.btn-email:hover{
+    background-color: #4a3b32;
+}
+.btn-wa:active .btn-email:active{
+    transform: scale(0.98);
+}
+.item-pendidikan{
+    margin-top: -5px;
+    margin-bottom: 15px;
+    font-size: 0.85rem;
+    line-height: 1.4;
+    text-align: left;
+}
+.item-pendidikan .tahun{
+    font-weight: 600;
+    color: #4a3b32;
+    margin-bottom: 2px;
+}
+.tahun{
+    display: inline-block;
+    color: #4a3b32;
+    font-family: 'Times New Roman', Times, serif;
+    font-size:16pt;
+    font-weight: 700;
+    margin-bottom: 3px;
+}
+.nama-sekolah{
+    color: #4a3b32;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 14pt;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+}
+.bidang-keahlian{
+    font-size: 12pt;
+    font-weight: 400;
+    color: #4a3b32;
+    font-style: italic;
+    padding-left: 2px;
+}
+.ipk{
+    font-size: 9.5;
+    color: #4a3b32;
+}
+.kemampuan{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.kemampuan li{
+    display: inline-block;
+    background-color: #7e604d;
+    color: #ffff;
+    font-size: 10pt;
+    font-weight: 500;
+    padding: 6px 14px;
+    margin-right: 8px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border: 1px solid #4a3b32;
+}
+.judul-cv{
+    font-size: 18pt;
+    font-weight: 500;
+}
+.kolom-kanan{
+    flex: 1 !important;
+    padding: 10px 25px;
+    box-sizing: border-box;
+}
+.header h1{
+    font-size: 30pt;
+    font-weight: 700;
+    color: #4a3b32;
+    padding-bottom: 2px;
+}
+.header h2{
+    font-size: 20;
+    font-weight: 500;
+    color: #4a3b32;
+    padding-left: 2px;
+}
+.tentang-saya{
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #ffff;
+    max-width: 800px;
+    text-align: justify;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    gap: 6px;
+}
+.tentang-saya h3{
+    font-size: 14pt;
+    font-weight: 700;
+    color: #4a3b32;
+    text-transform: uppercase;
+    letter-spacing: 0;
+    margin-bottom: 15px;
+    border-bottom: solid;
+    padding-bottom: 5px;
+}
+.tentang-saya p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.2rem;
+    font-weight: 6.25rem;
+    text-align: justify;
+    text-justify: inter-word;
+    hyphens: none;
+    word-break: keep-all;
+    overflow-wrap: break-word;
+    line-height: 1.8;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.section-pengalaman{
+    font-family:'Times New Roman', Times, serif;
+    margin-bottom: 35px;
+    padding: 10px 0px;
+    padding-bottom: 1rem;
+    
+}
+.pengalaman-kerja{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.section-pengalaman h3{
+    font-size: 14pt;
+    font-weight: 700;
+    color: #4a3b32;
+    text-transform: uppercase;
+    letter-spacing: 0;
+    margin-bottom: 15px;
+    border-bottom: solid;
+    padding-bottom: 5px;
+}
+.tahun-kerja{
+    display: inline-block;
+    color: #4a3b32;
+    font-family: 'Times New Roman', Times, serif;
+    font-size:16pt;
+    font-weight: 700;
+    margin-bottom: 2px;
+    margin-top: 0;
+}
+.detail-kerja{
+    font-size: 14pt;
+    font-weight: 500;
+    color: #4a3b32;
+    margin-top: -5px;
+    margin-bottom: 0px;
+    
+}
+.kegiatan-kerja{
+    font-style: italic;
+    font-size: 12pt;
+    font-weight: 500;
+    color: #4a3b32;
+    line-height: 1.5;
+    text-align: justify;
+    margin-top: -5px;
+    margin-bottom: 15px;
+    
+}
+.section-pelatihan{
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: #4a3b32;
+    line-height: 1.5rem;
+    text-align: justify;
+    padding: 0;
+    padding-bottom: 1rem;
+    letter-spacing: 0;
+    margin-top: -25px;
+    margin-bottom: 6px;
+    border-bottom: none;
+}
+.section-pelatihan h3{
+    font-size: 14pt;
+    font-weight: 700;
+    color: #4a3b32;
+    text-transform: uppercase;
+    letter-spacing: 0;
+    margin-top: 4px;
+    margin-bottom: 6px;
+    border-bottom: solid;
+    padding-bottom: 5px; 
+    padding: 0;
+}
+.thn-kerja{
+    display: inline-block;
+    color: #4a3b32;
+    font-family: 'Times New Roman', Times, serif;
+    font-size:16pt;
+    font-weight: 700;
+    margin-bottom: 2px;
+    margin-top: 0;
+}
+.dtl-kerja{
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #4a3b32;
+    margin-bottom: 0px;
+}
+.kgtn-kerja{
+    font-style: italic;
+    font-size: 12pt;
+    font-weight: 500;
+    color: #4a3b32;
+    line-height: 1.5;
+    text-align: justify;
+    margin-top: 0px;
+    margin-bottom: 18px;
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .cv-container{
+        flex-direction: column;
+        padding: 10px;
+        gap: 20px;
+    }
+ 
+    .kolom-kiri{
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .kolom-kanan{
+        padding: 0 10px;
+    }
+
+    .profil-image{
+        margin: 0 auto 20px auto;
+    }
+
+    .header h1{
+        font-size: 22pt;
+        text-align: center;
+    }
+
+    header h2{
+        font-size: 14pt;
+        text-align: center;
+        padding-left: 0;
+        margin-bottom: 20px;
+    }
+
+    .tentang-saya p, .kegiatan-kerja{
+        text-align: left;
+    }
+}
